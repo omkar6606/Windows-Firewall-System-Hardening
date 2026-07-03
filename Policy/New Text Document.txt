@@ -1,0 +1,65 @@
+# Windows Firewall Security Policy
+
+## Purpose
+
+This document defines the firewall policy implemented during the Windows Firewall Configuration and System Hardening project.
+
+---
+
+## Default Firewall Configuration
+
+- Firewall Enabled for Domain Profile
+- Firewall Enabled for Private Profile
+- Firewall Enabled for Public Profile
+- Default Inbound Action: Block
+- Default Outbound Action: Allow
+
+---
+
+## Allowed Services
+
+| Service | Port | Protocol |
+|----------|------|----------|
+| HTTP | 80 | TCP |
+| HTTPS | 443 | TCP |
+| SSH | 22 | TCP |
+
+---
+
+## Blocked Services
+
+| Service | Port | Protocol |
+|----------|------|----------|
+| FTP | 21 | TCP |
+| Telnet | 23 | TCP |
+
+---
+
+## Security Objectives
+
+- Prevent unauthorized inbound connections.
+- Block insecure legacy protocols.
+- Allow only trusted network services.
+- Reduce the attack surface of the operating system.
+- Improve endpoint protection.
+
+---
+
+## Verification
+
+The firewall configuration was verified using:
+
+- Windows Defender Firewall with Advanced Security
+- Windows PowerShell
+- Command Prompt
+- Windows Security
+
+---
+
+## Compliance
+
+The implemented firewall policy follows security best practices recommended by:
+
+- Microsoft Security Baselines
+- CIS Windows Benchmarks
+- NIST Cybersecurity Framework (CSF)
